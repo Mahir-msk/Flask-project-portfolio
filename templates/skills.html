@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Technologies I use regularly</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="skills-tabs">
+      {% for category in skills %}
+        <button class="tab-btn" data-category="{{ category }}">{{ category }}</button>
+      {% endfor %}
+    </div>
+
+    <!-- Skills -->
+    <div id="skillsContent">
+      {% for category, items in skills.items() %}
+      <div class="skill-category" id="tab-{{ category }}" style="display: none;">
+        <div class="skills-grid">
+          {% for item in items %}
+          <div class="skill-card">
+            <span>{{ item }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.tab-btn');
+    const categories = document.querySelectorAll('.skill-category');
+
+    // Activate the first tab by default
+    if (buttons.length > 0) {
+      buttons[0].classList.add('active');
+      const defaultCategory = buttons[0].dataset.category;
+      document.getElementById(`tab-${defaultCategory}`).style.display = 'block';
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active from all
+        buttons.forEach(btn => btn.classList.remove('active'));
+        categories.forEach(cat => cat.style.display = 'none');
+
+        // Activate current
+        button.classList.add('active');
+        const category = button.dataset.category;
+        document.getElementById(`tab-${category}`).style.display = 'block';
+      });
+    });
+  });
+</script>
+
+{% endblock %}

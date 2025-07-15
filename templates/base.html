@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Mahir | ML Portfolio" }}</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar will be added later -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-content">
+      <a href="/" class="logo">Mahir<span class="text-accent">.</span></a>
+      <nav class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <!-- <a href="#tech-news" class="nav-link">Tech News</a> -->
+        <a href="{{ url_for('projects.show_projects') }}" class="nav-link">Projects</a>
+        <a href="{{ url_for('skills.show_skills') }}" class="nav-link">Skills</a>
+        <a href="{{ url_for('certifications.show_certifications') }}" class="nav-link">Certifications</a>
+        <a href="{{ url_for('achievements.show_achievements') }}" class="nav-link">Achievements</a>
+        <a href="{{ url_for('resume.show_resume') }}" class="nav-link">Resume</a>
+        <a href="{{ url_for('contact.contact') }}" class="nav-link">Contact</a>
+        <!-- <button id="themeToggle" class="theme-toggle">🌓</button> -->
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <!-- Content Block -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
+<footer class="footer">
+  <p>© 2025 Mahir Sajad. All rights reserved.</p>
+</footer>
+
+  </body>
+</html>

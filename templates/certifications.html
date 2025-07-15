@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Professional courses & credentials</p>
+    </div>
+    <div class="certifications-container">
+      {% for cert in certifications %}
+      <div class="cert-card">
+        <h3>{{ cert.title }}</h3>
+        <p><strong>Platform:</strong> {{ cert.platform }}</p>
+        <p><strong>Status:</strong> {{ cert.status }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

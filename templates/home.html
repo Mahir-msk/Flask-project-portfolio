@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1 class="hero-title">Hi, I’m <span class="highlight">Mahir</span></h1>
+      <h2 class="hero-subtitle typing-text" id="typingText"></h2>
+      <p class="hero-description">From pixels to predictions — decoding the world with AI.</p>
+      <a href="/projects/" class="btn btn-primary">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="{{ url_for('static', filename='images/images.JPG') }}" alt="Profile" class="profile-img animated-img">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Blogs and Tech News will come next -->
+
+<!-- <section id="blogs" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Latest Blogs</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Insights from my learning journey</p>
+    </div>
+    <div class="blogs-grid">
+      {% for blog in blogs %}
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-content">
+          <h3 class="blog-title">{{ blog.title }}</h3>
+          <p class="blog-description">{{ blog.description }}</p>
+          <p class="blog-date">🗓️ {{ blog.date }}</p>
+          <a href="{{ blog.link }}" target="_blank" class="btn btn-secondary">Read More</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section> -->
+
+<section id="blogs" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Latest Blogs</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Read my latest technical writeups</p>
+    </div>
+    <div class="blogs-container" id="blogsContainer">
+      <!-- Blog cards will be injected here -->
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Tech News Section -->
+<section id="tech-news" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Tech News</h2>
+      <div class="section-line"></div>
+      <p class="section-subtitle">Latest in AI & ML</p>
+    </div>
+
+     
+    <div class="news-container" id="newsContainer">
+      <!-- News will be injected via JS -->
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

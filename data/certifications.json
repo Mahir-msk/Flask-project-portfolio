@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Web Development",
+    "platform": "Udemy",
+    "status": "Currently Enrolled"
+  },
+  {
+    "title": "Machine Learning",
+    "platform": "Udemy",
+    "status": "Currently Enrolled"
+  },
+  {
+    "title": "Masters in Data Science & ML",
+    "platform": "GeeksforGeeks",
+    "status": "In Progress"
+  },
+  {
+    "title": "Prompt Engineering",
+    "platform": "coursera-Vanderbilt University",
+    "status": "Completed"
+  }
+]

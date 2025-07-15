@@ -1,0 +1,5 @@
+{
+  "Languages": ["Python", "C++", "JavaScript","C","Java"],
+  "Frameworks": ["Flask", "TensorFlow", "PyTorch","Pandas","Flask"],
+  "Tools": ["Git", "Docker", "Postman","SQL"]
+}

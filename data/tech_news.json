@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Meta releases Llama 3 with 400B params",
+    "summary": "Meta’s latest open-source model shows state-of-the-art performance on several benchmarks.",
+    "source": "Meta AI",
+    "link":"https://ai.meta.com/blog/meta-llama-3/"
+    
+  },
+  {
+    "title": "OpenAI launches GPT-5 research preview",
+    "summary": "GPT-5 shows multimodal understanding and memory enhancements.",
+    "source": "OpenAI",
+    "link":"https://openai.com/index/introducing-gpt-4-5/"
+  },
+  {
+    "title": "Google DeepMind builds next-gen RL agent",
+    "summary": "AlphaFold 3 & Gemini 2 set new standards for AI research and reasoning.",
+    "source": "Google DeepMind",
+    "link":"https://deepmind.google/discover/blog/generally-capable-agents-emerge-from-open-ended-play/"
+  }
+]

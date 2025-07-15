@@ -1,0 +1,37 @@
+[
+  {
+    "title": "YOLOv8 People Counter",
+    "description": "Real-time crowd analysis using YOLOv8 with metrics tracking.",
+    "tags": ["Computer Vision", "YOLOv8", "Retail AI"],
+    "github": "https://github.com/Mahir-msk/Crowd-detection-Using-YOLOV8",
+    "demo": "https://github.com/Mahir-msk/Crowd-detection-Using-YOLOV8"
+  },
+  {
+    "title": "Library Management System",
+    "description": "System used to manage the books and logs of book in a Library.",
+    "tags": ["Data Structures", "c++"],
+    "github": "https://github.com/Mahir-msk/c-Library-Management-System",
+    "demo": "https://github.com/Mahir-msk/c-Library-Management-System"
+  },
+  {
+    "title": "JourneyX",
+    "description": "Travel Guide Websitr.",
+    "tags": ["Ml", "Google_Maps", "NLP"],
+    "github": "https://github.com/Mahir-msk/journeyx",
+    "demo": ""
+  },
+  {
+    "title": "Resume Review Bot",
+    "description": "Flask + Gemini API based system to analyze resumes dynamically.",
+    "tags": ["Flask", "Gemini API", "NLP"],
+    "github": "https://github.com/yourname/resume-review",
+    "demo": ""
+  },
+  {
+    "title": "Resume Review Bot",
+    "description": "Flask + Gemini API based system to analyze resumes dynamically.",
+    "tags": ["Flask", "Gemini API", "NLP"],
+    "github": "",
+    "demo": ""
+  }
+]
